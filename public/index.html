@@ -15,8 +15,7 @@
 	     src: URL('fonts/UniversRegular.ttf') format('truetype');
 	 }
 
-	 .hero_panel{
-	 }
+	 .hero_panel{}
 
 	 .btn.btn-link, a{
 	     color: #0c5055;
@@ -26,6 +25,10 @@
 	     background-color: #0c5055;
 	     background-image: url("img/main.jfif");
 	     background-size: 100% 100%;
+	 }
+
+	 #HERO_RIGHT_PANEL{
+	     border-left: thick solid teal;
 	 }
 
 	 #LOGO {
@@ -50,6 +53,7 @@
 	 }
 
 	 #PERFORMANCES_RIGHT_PANEL{
+	     border-left: thick solid teal;
 	     background-color: #ffffff;
 	     background-position: right center;
 	     background-attachment: fixed;
@@ -66,9 +70,11 @@
 	     background-image: url("img/b.png");
 	     background-attachment: fixed;
 	     background-position: center bottom;
+	     background-repeat: no;
 	 }
 
 	 #YOUTUBE_RIGHT_PANEL{
+	     border-left: thick solid teal;
 	     background-color: #ffffff;
 	     text-align: center;
 	 }
@@ -108,7 +114,7 @@
 	<div class="container">
 	    <div class="columns">
 		<div class="column col-3 hero_panel" id="HERO_LEFT_PANEL"></div>
-		<div class="column col hero_panel">
+		<div class="column col hero_panel" id="HERO_RIGHT_PANEL">
 		    <header class="navbar">
 			<section class="navbar-section">
 			</section>
