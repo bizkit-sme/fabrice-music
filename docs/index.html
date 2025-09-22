@@ -22,6 +22,16 @@
 	     background-repeat: no-repeat;
 	 }
 
+	 .dropdown, .btn.btn-link{
+	     background-color: #ffffff;
+	     color: teal;
+	 }
+
+	 .btn-link:hover, .btn:hover, .dropdown:focus{
+	     background-color: teal;
+	     color: #ffffff !important;
+	 }
+
 	 .column {
 	     padding: 3em;
 	 }	
@@ -58,12 +68,6 @@
 	     background-color: #4e766d;
 	     color: #000000;
 	     border-color: #4e766d;
-	 }
-
-	 .btn:hover{
-	     cursor: pointer;
-	     background-color: #000000;
-	     color: #4e766d;	     
 	 }
 	 
 	 #ABOUT_CONTAINER{
@@ -157,7 +161,26 @@
     <body>
 	<div class="container">
 	    <div class="columns">
-		<div class="column col-6" id="COVER"></div>
+		<div class="column col-6" id="COVER">
+		    <div class="dropdown">
+			<a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+			    <i class="icon icon-menu"></i>
+			</a>
+			<!-- menu component -->
+			<ul class="menu">
+			    <li class="menu-item">
+				<a href="index.html">
+				    Home
+				</a>
+			    </li>
+			    <li class="menu-item">
+				<a href="events.html">
+				    Events
+				</a>
+			    </li>
+			</ul>
+		    </div>
+		</div>
 		<div class="column col-6" id="INTRO_CONTAINER">
 		    <header class="navbar">
 			<section class="navbar-section"></section>
@@ -197,11 +220,11 @@
 		<div class="column col-12" id="YOUTUBE_CONTAINER">
 		    <iframe
 			src="https://www.youtube.com/embed/1CdbIglu3G0"
-			     title="My Worship_ Fabrice Kntumba Saxophone Instrumental (Official Video)"
-			     frameborder="0"
-			     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			     referrerpolicy="strict-origin-when-cross-origin"
-			     allowfullscreen>
+			title="My Worship_ Fabrice Kntumba Saxophone Instrumental (Official Video)"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen>
 		    </iframe>
 		</div>
 	    </div>
